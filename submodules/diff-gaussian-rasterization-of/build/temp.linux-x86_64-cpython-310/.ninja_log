@@ -1,0 +1,16 @@
+# ninja log v5
+1	3892	1717428013833991198	/workspace/home/sync/course_mat/prob_robot/project/gaussian-opacity-fields/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/backward.o	733d9b39df25e3c2
+1	3921	1717428013861991832	/workspace/home/sync/course_mat/prob_robot/project/gaussian-opacity-fields/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/forward.o	c11166b17b6fbc53
+1	11327	1717428021262159350	/workspace/home/sync/course_mat/prob_robot/project/gaussian-opacity-fields/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/rasterizer_impl.o	a12acee0f5477d28
+1	23186	1717428033114427632	/workspace/home/sync/course_mat/prob_robot/project/gaussian-opacity-fields/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-310/ext.o	bca90e7d764a150d
+1	56618	1717428066539184095	/workspace/home/sync/course_mat/prob_robot/project/gaussian-opacity-fields/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-310/rasterize_points.o	3adfe2415d93a1c4
+5	5357	1717695394615809517	/workspace/home/sync/course_mat/prob_robot/project/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/backward.o	82fb0c10da4321
+6	5475	1717695394731812101	/workspace/home/sync/course_mat/prob_robot/project/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/forward.o	f6da699697f0df5e
+6	15661	1717695404916039022	/workspace/home/sync/course_mat/prob_robot/project/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/rasterizer_impl.o	815d4032c8f49ffb
+6	32196	1717695421440407352	/workspace/home/sync/course_mat/prob_robot/project/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-310/ext.o	5c84147865ff3b82
+6	59574	1717695448817017947	/workspace/home/sync/course_mat/prob_robot/project/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-310/rasterize_points.o	b3b8e615898b51fa
+6	4346	1717754261519850793	/workspace/home/sync/course_mat/prob_robot/project/submodules/diff-gaussian-rasterization-of/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/forward.o	f0816cd57f8eb28
+6	4455	1717754261631853414	/workspace/home/sync/course_mat/prob_robot/project/submodules/diff-gaussian-rasterization-of/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/backward.o	35ddc693acd2ddc
+6	12576	1717754269748043326	/workspace/home/sync/course_mat/prob_robot/project/submodules/diff-gaussian-rasterization-of/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/rasterizer_impl.o	5470a7ee11f8f15c
+7	27000	1717754284164380561	/workspace/home/sync/course_mat/prob_robot/project/submodules/diff-gaussian-rasterization-of/build/temp.linux-x86_64-cpython-310/ext.o	5ae65328d2315bb3
+7	57858	1717754315017101892	/workspace/home/sync/course_mat/prob_robot/project/submodules/diff-gaussian-rasterization-of/build/temp.linux-x86_64-cpython-310/rasterize_points.o	d2cbe16f27c4118f

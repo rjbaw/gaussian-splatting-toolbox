@@ -1,0 +1,7 @@
+misc/*
+output/*
+results/*
+data/*
+*.swp
+__pycache__/
+*~
