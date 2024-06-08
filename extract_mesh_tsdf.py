@@ -75,7 +75,7 @@ def tsdf_fusion(model_path, name, iteration, views, gaussians, pipeline, backgro
             
 def extract_mesh(dataset : ModelParams, iteration : int, pipeline : PipelineParams):
     with torch.no_grad():
-        gaussians = GaussianModel(dataset.sh_degree)
+        gaussians = GaussianModel(dataset.sh_degree, model_type="of")
         scene = Scene(dataset, gaussians, load_iteration=iteration, shuffle=False)
     
         train_cameras = scene.getTrainCameras()

@@ -197,8 +197,11 @@ def training_of(dataset, opt, pipe, testing_iterations, saving_iterations, check
         if is_save_images and (iteration % opt.densification_interval == 0):
             with torch.no_grad():
                 eval_cam = allCameras[random.randint(0, len(allCameras) -1)]
-                
-                rendering = render(eval_cam, gaussians, pipe, background, kernel_size=dataset.kernel_size)["render"]
+                rendering = render(viewpoint_camera=eval_cam,
+                                   pc=gaussians,
+                                   pipe=pipe,
+                                   bg_color=background,
+                                   kernel_size=dataset.kernel_size)["render"]
                 image = rendering[:3, :, :]
                 transformed_image = L1_loss_appearance(image, eval_cam.original_image.cuda(), gaussians, eval_cam.idx, return_transformed_image=True)
                 

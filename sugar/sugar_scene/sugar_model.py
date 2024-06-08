@@ -2678,7 +2678,7 @@ def extract_texture_image_and_uv_from_gaussians(
 
 
 def convert_refined_sugar_into_gaussians(refined_sugar):
-    new_gaussians = GaussianModel(refined_sugar.sh_levels - 1)
+    new_gaussians = GaussianModel(refined_sugar.sh_levels - 1, model_type="gs3d")
     
     with torch.no_grad():
         xyz = refined_sugar.points.cpu().numpy()

@@ -128,7 +128,7 @@ def marching_tetrahedra_with_binary_search(model_path, name, iteration, views, g
 
 def extract_mesh(dataset : ModelParams, iteration : int, pipeline : PipelineParams, filter_mesh : bool, texture_mesh : bool):
     with torch.no_grad():
-        gaussians = GaussianModel(dataset.sh_degree)
+        gaussians = GaussianModel(dataset.sh_degree, model_type="of")
         scene = Scene(dataset, gaussians, load_iteration=iteration, shuffle=False)
         
         gaussians.load_ply(os.path.join(dataset.model_path, "point_cloud", f"iteration_{iteration}", "point_cloud.ply"))

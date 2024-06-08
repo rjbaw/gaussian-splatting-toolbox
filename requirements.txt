@@ -12,10 +12,8 @@ trimesh
 pillow
 scikit-image
 mediapy
-
 submodules/diff-gaussian-rasterization
 submodules/diff-gaussian-rasterization-of
 submodules/diff-surfel-rasterization
 submodules/simple-knn
 submodules/tetra-triangulation
-submodules/ImageBind

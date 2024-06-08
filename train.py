@@ -112,7 +112,7 @@ if __name__ == "__main__":
 
         scene_path = args.source_path
         checkpoint_path = args.model_path if args.model_path.endswith('/') else args.model_path + '/'
-        iteration_to_load = 7000
+        iteration_to_load = args.iterations
         regularization_type = "sdf" # sdf/density coarse SuGar
         surface_level = 0.3
         n_vertices_in_mesh = 1_000_000

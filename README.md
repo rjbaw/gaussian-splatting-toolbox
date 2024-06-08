@@ -1,5 +1,11 @@
 # Gaussian Splatting Toolbox
-Unified Gaussian Splatting Toolbox for Research
+
+Unified Gaussian Splatting Toolbox
+
+## Quick Start
+```
+git clone --recursive https://github.com/rjbaw/gaussian-splatting-toolbox.git
+```
 
 ## Integrations
 

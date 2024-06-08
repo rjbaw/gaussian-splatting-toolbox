@@ -14,3 +14,8 @@
 6	12576	1717754269748043326	/workspace/home/sync/course_mat/prob_robot/project/submodules/diff-gaussian-rasterization-of/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/rasterizer_impl.o	5470a7ee11f8f15c
 7	27000	1717754284164380561	/workspace/home/sync/course_mat/prob_robot/project/submodules/diff-gaussian-rasterization-of/build/temp.linux-x86_64-cpython-310/ext.o	5ae65328d2315bb3
 7	57858	1717754315017101892	/workspace/home/sync/course_mat/prob_robot/project/submodules/diff-gaussian-rasterization-of/build/temp.linux-x86_64-cpython-310/rasterize_points.o	d2cbe16f27c4118f
+9	5658	1717852226413826477	/workspace/home/sync/course_mat/prob_robot/project/gaussian-splatting-toolbox/submodules/diff-gaussian-rasterization-of/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/forward.o	3f33b3f1c3c830b0
+8	5998	1717852226773835566	/workspace/home/sync/course_mat/prob_robot/project/gaussian-splatting-toolbox/submodules/diff-gaussian-rasterization-of/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/backward.o	e6c49729bc3b89ff
+9	15884	1717852236654084793	/workspace/home/sync/course_mat/prob_robot/project/gaussian-splatting-toolbox/submodules/diff-gaussian-rasterization-of/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/rasterizer_impl.o	43d9fb609bba8430
+9	36982	1717852257738615295	/workspace/home/sync/course_mat/prob_robot/project/gaussian-splatting-toolbox/submodules/diff-gaussian-rasterization-of/build/temp.linux-x86_64-cpython-310/ext.o	a4ca045bb95ee483
+11	66947	1717852287703366187	/workspace/home/sync/course_mat/prob_robot/project/gaussian-splatting-toolbox/submodules/diff-gaussian-rasterization-of/build/temp.linux-x86_64-cpython-310/rasterize_points.o	7551d6bcb6846ce3

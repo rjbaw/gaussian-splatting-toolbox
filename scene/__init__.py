@@ -49,7 +49,8 @@ class Scene:
             print("Found metadata.json file, assuming multi scale Blender data set!")
             scene_info = sceneLoadTypeCallbacks["Multi-scale"](args.source_path, args.white_background, args.eval, args.load_allres)
         else:
-            assert False, "Could not recognize scene type!"
+            #assert False, "Could not recognize scene type!"
+            scene_info = sceneLoadTypeCallbacks["Colmap"](args.source_path, args.images, args.eval)
 
         if not self.loaded_iter:
             with open(scene_info.ply_path, 'rb') as src_file, open(os.path.join(self.model_path, "input.ply") , 'wb') as dest_file:

@@ -16,12 +16,13 @@ import torch
 import torchvision.transforms.functional as tf
 from utils.loss_utils import ssim
 
-#import lpips
-from lpipsPyTorch import lpips
 import json
 from tqdm import tqdm
 from utils.image_utils import psnr
 from argparse import ArgumentParser
+
+import lpips
+#from lpipsPyTorch import lpips
 
 def readImages(renders_dir, gt_dir):
     renders = []
@@ -100,7 +101,8 @@ def evaluate(model_paths, scale, model_type):
                 json.dump(full_dict[scene_dir], fp, indent=True)
             with open(scene_dir + "/per_view.json", 'w') as fp:
                 json.dump(per_view_dict[scene_dir], fp, indent=True)
-        except:
+        except Exception as e:
+            print(e)
             print("Unable to compute metrics for model", scene_dir)
 
 if __name__ == "__main__":
@@ -117,4 +119,5 @@ if __name__ == "__main__":
     parser.add_argument('--model-type', '-t', type=str, default="custom", choices=["custom", "gs3d", "gs2d", "of"])
     
     args = parser.parse_args()
+
     evaluate(args.model_paths, args.resolution, args.model_type)

@@ -16,7 +16,7 @@ from scene.gaussian_model import GaussianModel
 from utils.sh_utils import eval_sh
 from utils.point_utils import depth_to_normal
 
-def render(viewpoint_camera, pc : GaussianModel, pipe, bg_color : torch.Tensor, scaling_modifier = 1.0, override_color = None, subpixel_offset=None, kernel_size=None):
+def render(viewpoint_camera, pc : GaussianModel, pipe, bg_color : torch.Tensor, kernel_size = 0.0, scaling_modifier = 1.0, override_color = None, subpixel_offset=None):
     """
     Render the scene. 
     
@@ -176,6 +176,7 @@ def render(viewpoint_camera, pc : GaussianModel, pipe, bg_color : torch.Tensor, 
             scales = scales,
             rotations = rotations,
             cov3D_precomp = cov3D_precomp)
+
 
         # Those Gaussians that were frustum culled or had a radius of 0 were not visible.
         # They will be excluded from value updates used in the splitting criteria.
@@ -402,7 +403,8 @@ def integrate(points3D, viewpoint_camera, pc : GaussianModel, pipe, bg_color : t
         scales = scales,
         rotations = rotations,
         cov3D_precomp = cov3D_precomp,
-        view2gaussian_precomp=view2gaussian_precomp)
+        view2gaussian_precomp=view2gaussian_precomp,
+    )
 
     # Those Gaussians that were frustum culled or had a radius of 0 were not visible.
     # They will be excluded from value updates used in the splitting criteria.
